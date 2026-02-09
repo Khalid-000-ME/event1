@@ -157,6 +157,9 @@ export default function Home() {
             <div className="flex items-center gap-2 bg-white/5 px-4 py-2 rounded-lg border border-white/5">
               <span>⏰</span> <span className="font-semibold">10:00 AM</span>
             </div>
+            <div className="flex items-center gap-2 bg-white/5 px-4 py-2 rounded-lg border border-white/5">
+              <span>📍</span> <span className="font-semibold">Venue: G01</span>
+            </div>
           </div>
         </div>
 
@@ -331,7 +334,7 @@ export default function Home() {
                   <div className="flex items-start gap-3">
                     <div className="mt-1 h-2 w-2 rounded-full bg-blue-400 shrink-0"></div>
                     <p className="text-sm text-gray-300 leading-relaxed">
-                      Founding 2 other startups in Dubai and Chennai.
+                      Founder of 2 other startups in Dubai and Chennai.
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
