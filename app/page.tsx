@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 
 // PLEASE REPLACE THIS URL WITH YOUR DEPLOYED GOOGLE APPS SCRIPT WEB APP URL
-const GOOGLE_SCRIPT_URL = process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL;
+const GOOGLE_SCRIPT_URL = process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL || "";
 
 const departments = [
   "CSE A",
@@ -54,7 +54,7 @@ export default function Home() {
       return;
     }
 
-    if (GOOGLE_SCRIPT_URL === "REPLACE_WITH_YOUR_WEB_APP_URL") {
+    if (!GOOGLE_SCRIPT_URL || GOOGLE_SCRIPT_URL === "REPLACE_WITH_YOUR_WEB_APP_URL") {
       setError("Please deploy the Google Apps Script and update the URL in page.tsx");
       return;
     }
